@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 body{
     
@@ -98,7 +99,7 @@ nav ul li:hover .submenu{
 .Flower-cards{
     margin: 0 5%;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
 }
 .F-card{
@@ -252,14 +253,14 @@ footer .info-copy{
     #tbars{
         display:block !important;
     }
-    nav{
+    .show{
         position: absolute;
         top: 50px;
         left: 0;
         justify-content: left;
         display:none;
     }
-    nav ul li{
+    .show li{
         display: block;
     }
     .submenu{
