@@ -94,16 +94,13 @@ nav ul li:hover .submenu{
     font-size: 18px;
 }
 .Flower-cards{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 .F-card{
-    width:20%;
-    min-width: 200px;
-    height: 50vh;
+    height: auto;
     min-height: 300px;
-    margin: 50px 20px;
 }
 .F-card img{
     width: 100%;
@@ -217,6 +214,7 @@ footer .info-copy{
     flex-wrap: wrap;
 }
 .bi{
+    display:block;
     color: rgb(233, 66, 169);
     background-color: #0ef;
     padding: 11px;
