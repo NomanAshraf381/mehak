@@ -250,7 +250,7 @@ footer .info-copy{
 }
 @media screen and (max-width: 650px) {
     #tbars{
-        display:block;
+        display:block !important;
     }
     nav{
         position: absolute;
@@ -264,6 +264,9 @@ footer .info-copy{
     }
     .submenu{
         position: static;
+    }
+    .submenu li{
+        display: block;
     }
     .visible{
         display: block !important;
