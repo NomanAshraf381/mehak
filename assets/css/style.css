@@ -22,9 +22,7 @@ body{
     margin: 50px 0;
     width: 100%;
 }
-#tbars{
-    display: none;
-}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -98,10 +96,10 @@ nav ul li:hover .submenu{
     font-size: 18px;
 }
 .Flower-cards{
+    margin: 0 5%;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    margin: 0 5%;
 }
 .F-card{
     height: auto;
@@ -228,6 +226,9 @@ footer .info-copy{
 }
 .bi:hover{
     box-shadow: 0 0 15px white;
+}
+#tbars{
+    display: none !important;
 }
 @media  screen and (max-width: 800px) {
     .shop-detail{
