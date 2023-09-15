@@ -15,14 +15,13 @@
   <title>Mehak : Buy Flowers Online With Mehak</title>
 </head>
 <body>
-    <div class="logo">
+    <header class="logo">
       <a href="index.html">
-
-        <img src="assets/img/logo.png" alt="mehak logo">
+        <img src="assets/img/logo.png" height="80px" width="80px" alt="mehak logo">
       </a>
-    </div>
+    </header>
     <nav>
-      <ul>
+      <ul class='show'>
         <li><a href="new.html">New</a></li>
         <li><a href="fresh.html">Fresh Flowers</a>
           <ul class="submenu">
@@ -30,6 +29,7 @@
             <li><a href="#">SunFlower</a></li><br>
             <li><a href="#">Jasmine</a></li>
           </ul>
+          <i id="tbars" onclick="showNav()" class="bi bi-list"></i>
         </li>
         <li><a href="representation.html">Floral Representation</a>
           <ul class="submenu">
@@ -42,7 +42,7 @@
       </ul>
     </nav>
     <br>
-    <main>      
+    <main onclick="hideNav()">      
         <div class="slideshow-container">  
           <div class="mySlides fade">
             <img src="assets/img/slideshow/Main Pic 1.webp" style="width:100%">
@@ -217,6 +217,14 @@
     </footer>
 </body>
 <script>
+  function showNav(){
+    let ourNav = document.querrySelector(".show");
+    ourNav.classList.toggle("visible");
+  }
+  function hideNav(){
+    let ourNav = document.querrySelector(".show");
+    ourNav.classList.remove("visible");
+  }
   let slideIndex = 0;
   showSlides();
   
