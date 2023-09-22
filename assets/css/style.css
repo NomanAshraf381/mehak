@@ -150,7 +150,7 @@ nav ul li:hover .submenu{
     text-align: center;
     margin: 10px;
 }
-.shop-card p{
+. p{
     padding: 10px;
     font-size: 18px;
 }
@@ -248,13 +248,14 @@ footer .info-copy{
         max-width: 200px;
         background-color: #0ef;
         padding: 30px;
-        margin-left: 5vw;
-        margin-right: 5vw;
     }
 }
 @media screen and (max-width: 650px) {
     #tbars{
         display:block !important;
+    }
+    nav{
+        position: static;
     }
     .show{
         position: absolute;
