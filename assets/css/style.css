@@ -255,7 +255,7 @@ footer .info-copy{
         display:block !important;
     }
     nav{
-        position: static;
+        position: relative;
     }
     .show{
         position: absolute;
