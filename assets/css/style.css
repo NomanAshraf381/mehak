@@ -9,7 +9,7 @@ body{
     background-color: #0ef;
     color: rgb(233, 66, 169);
 }
-.container1{
+.container1, .container:first-of-type{
     padding-top: 0;
 }
 .logo{
