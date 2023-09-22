@@ -41,7 +41,7 @@
         <li><a href="ideas.html">Gifting Ideas</a></li>
       </ul>
     </nav>
-    <main onclick="navHide()">      
+    <main>      
         <div class="slideshow-container">  
           <div class="mySlides fade">
             <img src="assets/img/slideshow/Main Pic 1.webp" style="width:100%">
@@ -215,28 +215,7 @@
       </div>
     </footer>
 </body>
-<script>
-  let slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 3500); // Change image every 2 seconds
-  }
-  let navBar = document.querySelector('nav ul');
-  tbars.addEventListener('click',function(){
-    navBar.classList.toggle('navact')
-  })
-  function navHide(){
-    navBar.classList.remove('navact')
-  }
-  </script>
+<script src="assets/script.js"></script>
+
   
 </html>
