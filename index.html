@@ -15,14 +15,14 @@
   <title>Mehak : Buy Flowers Online With Mehak</title>
 </head>
 <body>
-    <header class="logo">
+    <div class="logo">
       <a href="index.html">
-        <img src="assets/img/logo.png" height="80px" width="80px" alt="mehak logo">
+        <img src="assets/img/logo.png" alt="mehak logo">
       </a>
-    </header>
+    </div>
     <nav>
-      <i id="tbars" onclick="showNav()" class="bi bi-list"></i>
-      <ul class='show'>
+      <i id="tbars" class="bi bi-list"></i>
+      <ul>
         <li><a href="new.html">New</a></li>
         <li><a href="fresh.html">Fresh Flowers</a>
           <ul class="submenu">
@@ -41,8 +41,7 @@
         <li><a href="ideas.html">Gifting Ideas</a></li>
       </ul>
     </nav>
-    <br>
-    <main onclick="hideNav()">      
+    <main onclick="navHide()">      
         <div class="slideshow-container">  
           <div class="mySlides fade">
             <img src="assets/img/slideshow/Main Pic 1.webp" style="width:100%">
@@ -58,7 +57,7 @@
         </div>
         <br>
         <!--Most Recent Flowers -->
-        <div class="container">
+        <div class="container container1">
           <div class="text-content">
             <center><p>Most Recent</p></center><br>
             <center><h1>Flowers</h1></center>  
@@ -217,14 +216,6 @@
     </footer>
 </body>
 <script>
-  function showNav(){
-    let ourNav = document.querySelector(".show");
-    ourNav.classList.toggle("visible");
-  }
-  function hideNav(){
-    let ourNav = document.querySelector(".show");
-    ourNav.classList.remove("visible");
-  }
   let slideIndex = 0;
   showSlides();
   
@@ -238,6 +229,13 @@
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 3500); // Change image every 2 seconds
+  }
+  let navBar = document.querySelector('nav ul');
+  tbars.addEventListener('click',function(){
+    navBar.classList.toggle('navact')
+  })
+  function navHide(){
+    navBar.classList.remove('navact')
   }
   </script>
   
