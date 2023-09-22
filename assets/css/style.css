@@ -280,7 +280,6 @@ footer .info-copy{
 @media screen and (max-width: 500px) {
     nav{
         position: relative;
-        justify-content: left;
     }
     nav ul li{
         display: block;
